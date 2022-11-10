@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>AM | Desarrollador Web</title>
+  <link rel="shortcut icon" href="./assets/images/icons8-portfolio-16.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Seccion Inicio -->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <h1><\AM\></h1>
+          <nav id="nav">
+            <ul id="links">
+              <li><a href="#inicio" onclick="seleccionar(this)">Inicio</a></li>
+              <li><a href="#skills" onclick="seleccionar(this)">Skills</a></li>
+              <li><a href="#portfolio" onclick="seleccionar(this)">Portafolio</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+            </ul>
+          </nav>
+          <!-- Iconos del menu responsive -->
+          <div id="icono-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- Iconos de las Redes -->
+          <div class="redes">
+            <a href="https://www.linkedin.com/in/andres-marin-developer/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AndresM94" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="presentacion">
+        <p class="bienvenida">Bienvenidos</p>
+        <h2>Soy <span>Andres Marin</span>, Desarrollador Web</h2>
+        <p class="descripcion">Front End Developer / Web Developer</p>
+        <a href="#portafolio">Ir a Portafolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Skills -->
+  <div class="contenedor-skills" id="skills">
+    <h3 class="titulo-seccion">HABILIDADES</h3>
+    <div class="contenedor-habilidades">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="./assets/images/icons8-html-5.svg"
+          alt="Logo de html5"
+          loading="lazy"
+          class="icon icon-card"
+          />
+        <img
+          src="./assets/images/icons8-css3.svg"
+          alt="Logo de css3"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/images/icons8-javascript.svg"
+          alt="Logo de javascript"
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="./assets/images/icons8-bootstrap.svg"
+          alt="Logo de Bootstrap"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/images/icons8-sass.svg"
+          alt="Logo de sass"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="./assets/images/icons8-git.svg"
+          alt="Logo de git"
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Seccion Portafolio -->
+  <section id="portfolio">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <!-- Cada .fila maximo 3 proyectos -->
+    <div class="fila">
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="./assets/images/encriptador.png" alt="Imagen del proyecto">
+        <div class="info">
+          <h4>Encriptador</h4>
+          <div class="info-links">
+            <a href="https://github.com/AndresM94/encriptador" target="_blank">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://andresm94.github.io/encriptador/" target="_blank">
+              <i class="ri-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="./assets/images/juego-ahorcado.png" alt="Imagen del proyecto">
+        <div class="info">
+          <h4>Juego del Ahorcado</h4>
+          <div class="info-links">
+            <a href="https://github.com/AndresM94/juego-del-ahorcado" target="_blank">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://andresm94.github.io/juego-del-ahorcado/" target="_blank">
+              <i class="ri-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <div class="overlay"></div>
+        <img src="./assets/images/Reloj.png" alt="Imagen del proyecto">
+        <div class="info">
+          <h4>Reloj</h4>
+          <div class="info-links">
+            <a href="https://github.com/AndresM94/Proyectos/tree/main/Reloj" target="_blank">
+              <i class="ri-github-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seccion Contacto -->
+  <section id="contacto">
+    <h3 class="titulo-seccion">Contactame ahora</h3>
+    <div class="contenedor-form">
+      <form action="">
+        <div class="fila mitad">
+          <input type="text" placeholder="Nombre Completo" class="input-mitad">
+          <input type="text" placeholder="Dirección de Email" class="input-mitad">
+        </div>
+        <div class="fila">
+          <input type="text" placeholder="Tema..." class="input-full">
+        </div>
+        <div class="fila">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+        </div>
+        <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+      </form>
+    </div>
+  </section>
+
+  <!-- Seccion Footer -->
+  <footer>
+    <p>Todos los derechos reservados - 2022</p>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/andres-marin-developer/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/AndresM94" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
